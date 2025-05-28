@@ -33,6 +33,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.USER }}/${{ secrets.IMG_NAME }}:latest
-            ${{ secrets.USER }}/${{ secrets.IMG_NAME }}:1.0.0  # 可选：同时打版本标签
+            ${{ secrets.USER }}/${{ secrets.IMG_NAME }}:1.0.0
           cache-from: type=gha
           cache-to: type=gha,mode=max
