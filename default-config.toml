@@ -1,0 +1,23 @@
+# ==================================================
+#     设备配置组（支持多设备,所有端口不能重复）    =
+#  帮助文档：https://gitee.com/freedomzzz/ssh2usb  =
+# ==================================================
+
+[[device]]
+name = "11T"                          # 设备名称
+type = "android"                      # 系统类型
+device_serial = "854TEM5XXSSKKBNJMF"  # 设备序列号
+socat_port = 8024                     # localhost:8022通过8023转为0.0.0.0:8022端口
+android_port = 8022                   # 移动设备 SSH 端口
+local_port = 18022                    # 移动设备 USB 端口映射(容器内部端口)
+vendor_id = "18d1"                    # USB厂商ID
+product_id = "4ee2"                   # 产品ID
+
+[[device]]
+name = "6PS"                                      # iOS 设备名称
+type = "ios"
+udid = "878f76f7e912c2334c2a4bfcaa6a7164e2d7a7cd" # 设备UDID号
+ios_port = 8022
+local_port = 8023
+vendor_id = "05ac"
+product_id = "12a8"
