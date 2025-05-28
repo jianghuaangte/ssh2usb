@@ -15,6 +15,7 @@ RUN set -eux; \
         usbutils \
         udev \
         socat \
+        usbmuxd \
         android-tools-adb \
         libimobiledevice6 \
         libimobiledevice-utils \
